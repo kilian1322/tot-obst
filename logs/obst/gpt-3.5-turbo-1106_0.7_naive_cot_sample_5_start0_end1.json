@@ -1,0 +1,34 @@
+[
+    {
+        "idx": 0,
+        "ys": [
+            "[2,1,3]",
+            "[2,1,3]",
+            "The optimal binary search tree for the given input of k=[1,2,3] and freq=[4,8,1] would be:\n\n[2, 1, 3]\n\nThis is because the key value 2 is chosen as the root node due to its high frequency and being in the middle of the key array. Then the left child is 1 and the right child is 3. All key values are used in the optimal binary search tree.",
+            "[2, 1, 3]",
+            "[2, 1, 3]"
+        ],
+        "infos": [
+            {
+                "r": 1
+            },
+            {
+                "r": 1
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 1
+            },
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 127,
+            "prompt_tokens": 1175,
+            "cost": 0.0020165
+        }
+    }
+]

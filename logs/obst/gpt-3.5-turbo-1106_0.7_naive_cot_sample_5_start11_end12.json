@@ -1,0 +1,34 @@
+[
+    {
+        "idx": 11,
+        "ys": [
+            "[4,2,6,1,3,5,7]",
+            "The optimal binary search tree for the given input arrays is:\n\n[4,2,6,1,3,5,7]",
+            "[4,2,6,1,3,5,7]\nExplanation: The root node is 4, then the left child is 2 and the right child is 6. The left child of 2 is 1 and the right child is 3. The left child of 6 is 5 and the right child is 7.",
+            "[4,2,6,1,3,5,7]",
+            "[4, 2, 6, 1, 3, 5, 7]"
+        ],
+        "infos": [
+            {
+                "r": 1
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 0
+            },
+            {
+                "r": 1
+            },
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 151,
+            "prompt_tokens": 1199,
+            "cost": 0.0021005000000000004
+        }
+    }
+]
