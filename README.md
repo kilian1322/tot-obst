@@ -1,4 +1,4 @@
-# Official Repo of Tree of Thoughts (ToT)
+# Repo of Tree of Thoughts (ToT) with Optimal Binary Search Trees (OBSTs) 
 
 <p>
     <a href="https://badge.fury.io/py/tree-of-thoughts-llm">
@@ -14,6 +14,66 @@
         <img src="https://zenodo.org/badge/642099326.svg">
     </a>
 </p>
+
+
+This is the code repository to the paper "Evaluation of the Tree of Thoughts Prompting Approach for Large Language Models based on the problem of Optimal Binary Search Trees" by Hüllen, K. 
+
+As the code for the experiments builds on the codebase of Yao et al. Tree of Thoughts: Deliberate Problem Solving with Large Language Models (https://arxiv.org/abs/2305.10601), their complete code, additionally to the newly written code for the OBST experiments, can be found in this repo as well. 
+
+Important files for the OBST experiments that were newly created or changed to successfully conducting the experiments described in the paper:
+1. the complete logs/obst folder: 
+
+    a. all logs from the experiments
+
+    b. results.py: script for evaluation and analysis of log files
+
+2. in the scripts folder: short scripts to run the experiments
+
+3. in src/tot/obst folder: 
+
+    a. obst.json contains the data set used for the experiments
+
+4. in src/tot/methods:
+
+    a. the bfs.py file contains the implementation of the bfs algorithm guiding through the tree of thoughs. The algorithm was taken from Yao et al. and slightly adjusted for the specifics of OBSTs.
+
+5. in src/tot/prompts: 
+
+    a. obst.py contains the complete prompts that were used during the experiments
+
+6. in src/tot/tasks:
+
+    a. obst.py contains the underlying class definition for the OBST problem instance as well as the Dynamming Programming algorithm to compute the OBST for a given keys-frequencies input pair.
+
+    b. models.py defines the underyling LLM used for the experiments. These were altered to gpt-3.5-turbo-1106 for our experiments.
+
+7. in the root folder:
+    
+    a. run.py is the file to start the execution of the ToT algorithm. Must be called with adequate parameters for OBST.
+
+    b. run_iterate_all_cot.py, run_iterate_all_standard.py and run_iterate_all.py provide scripts to run our conducted experiments
+
+
+
+
+The other files are untouched and not directly related to the OBST experiments described and analyzed in our paper. 
+
+However, for reference and to get started with the repo, some files might be of interest:
+1. in the root folder:
+
+    a. README.md (this file)
+
+    b. quick_start.py
+
+    
+
+
+
+
+
+
+
+
 
 ![teaser](pics/teaser.png)
 
