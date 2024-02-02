@@ -27,9 +27,9 @@ Important files for the OBST experiments that were newly created or changed to s
 
     b. results.py: script for evaluation and analysis of log files
 
-2. in the scripts folder: short scripts to run the experiments
+2. in the scripts/obst folder: short scripts to run the experiments
 
-3. in src/tot/obst folder: 
+3. in src/tot/data/obst folder: 
 
     a. obst.json contains the data set used for the experiments
 
